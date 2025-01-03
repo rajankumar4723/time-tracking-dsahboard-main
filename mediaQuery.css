@@ -2,16 +2,18 @@
     .dashboard{
         flex-direction: column;
             height: 100vh;
+            padding: 10px;
 
         
     }
     .leftside {
-        width: 100%;
+        width: 98%;
         height: auto;
-        min-width: 300px;
+        min-width: 280px;
         border-radius: 10px;
         position: relative;
-        margin: 10px;
+        margin-left: 10px;
+        /* margin: 10px; */
         /* Ensure stacking context for children */
       }
     .switchContainer{
@@ -23,9 +25,17 @@
         justify-content: space-between;
         gap: 25px;
     }
+    .profile h2{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .profile p{
+        margin-top: 10px;
+    }
     .card{
         width: 100%;
-        min-width: 300px
+        min-width: 280px;
+        margin-top: 20px;
     }
       
 }
