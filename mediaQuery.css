@@ -1,0 +1,31 @@
+@media(max-width:767px) {
+    .dashboard{
+        flex-direction: column;
+            height: 100vh;
+
+        
+    }
+    .leftside {
+        width: 100%;
+        height: auto;
+        min-width: 300px;
+        border-radius: 10px;
+        position: relative;
+        margin: 10px;
+        /* Ensure stacking context for children */
+      }
+    .switchContainer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .profile{
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+    }
+    .card{
+        width: 100%;
+        min-width: 300px
+    }
+      
+}

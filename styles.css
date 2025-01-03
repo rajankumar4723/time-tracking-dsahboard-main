@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors */
+  --blue: hsl(246, 80%, 60%);
+  --light-red-work: hsl(15, 100%, 70%);
+  --soft-blue-play: hsl(195, 74%, 62%);
+  --light-red-study: hsl(348, 100%, 68%);
+  --lime-green-exercise: hsl(145, 58%, 55%);
+  --violet-social: hsl(264, 64%, 52%);
+  --soft-orange-self-care: hsl(43, 84%, 65%);
+
+  /* Neutral Colors */
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+
+  /* Typography */
+  --font-size-body: 18px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: var(--font-size-body);
+  background-color: hsl(226, 43%, 10%);
+  color: hsl(236, 100%, 87%);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+.dashboard {
+
+  max-width: 860px;
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  /* align-items: center; */
+}
+
+.leftside {
+  width: 250px;
+  height: 95%;
+  border-radius: 10px;
+  position: relative;
+  /* Ensure stacking context for children */
+}
+
+.dayContainer {
+  height: 100%;
+  background-color: var(--dark-blue);
+  /* padding: 2rem; */
+  border-radius: 10px;
+  position: sticky;
+  /* Keeps the element at the top when scrolling */
+  top: 0;
+  /* Set the sticky starting position */
+  z-index: 999;
+  /* Ensures it appears above other elements */
+}
+
+.profile {
+  width: 100%;
+  height: 65%;
+  color: #fff;
+
+  /* display: flex;
+    flex-direction: column; */
+  background-color: var(--blue);
+  position: relative;
+  /* Default, but ensures no conflict with sticky */
+  z-index: 1;
+  /* Lower stacking order */
+  border-radius: 10px;
+  padding: 30px;
+
+}
+
+.profile img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.rightside {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.last{
+  color: var(--desaturated-blue);
+  margin-left: 20px;
+  font-size: 10px;
+  margin-top: 10px;
+
+}
+
+.card1 {
+  background-color: var(--light-red-work);
+}
+
+.card2 {
+  background-color: var(--soft-blue-play);
+}
+
+.card3 {
+  background-color: var(--light-red-study);
+}
+
+.card4 {
+  background-color: var(--lime-green-exercise);
+}
+
+.card5 {
+  background-color: var(--violet-social);
+}
+
+.card6 {
+  background-color: var(--soft-orange-self-care);
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  /* background-color: aqua; */
+  margin-left: 15px;
+  border-radius: 10px;
+  color: #fff;
+
+}
+
+.cardContainer {
+  height: 81%;
+  background-color: var(--dark-blue);
+
+
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.switchContainer {
+  padding: 25px;
+  cursor: pointer;
+  color: var(--desaturated-blue);
+}
+
+.switchContainer h4 {
+  margin-top: 10px;
+
+}
+
+.workContainer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-heading {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
